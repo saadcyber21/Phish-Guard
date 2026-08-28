@@ -1,0 +1,19 @@
+From: "Microsoft Security" <security-alert@microsoft-support-verify.com>
+To: "Saad" <saad@google.com>
+Subject: URGENT: Unusual sign-in activity detected on your account
+Return-Path: <bounce@malicious-phishing-domain.net>
+Received-SPF: fail (google.com: domain of microsoft-support-verify.com does not designate ...)
+Authentication-Results: mx.google.com; dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=microsoft-support-verify.com
+
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<p>Dear User,</p>
+<p>We detected an unusual sign-in attempt to your account from an unrecognized device.</p>
+<p>Please verify your identity immediately to prevent account suspension:</p>
+<p><a href="http://mircosoft-secure-login.com/verify">Click here to verify your account</a></p>
+<p>Alternatively, visit: https://www.amaz0n-security-alert.com/verify</p>
+<p>Thank you,<br>Microsoft Security Team</p>
+</body>
+</html>
