@@ -17,12 +17,12 @@ Phishing remains the #1 initial access vector for enterprise breaches. Tier 1 an
 
 ---
 
-## ️ System Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 graph TD
     A["suspicious_email.eml"] -->|"email.message_from_file"| B["MIME Parser"]
-    B -->|"Extract Headers"| C["Auth Validator SPF/DKIM/DMARC"]
+    B -->|"Extract Headers"| C["Auth Validator"]
     B -->|"Extract Payload"| D["URL Extractor"]
     D -->|"urllib.parse"| E["Domain Extractor"]
     E -->|"difflib.SequenceMatcher"| F["Typosquatting Heuristic"]
@@ -62,7 +62,7 @@ Authentication Results:
   DKIM:  Fail/Missing
   DMARC: Fail/Missing
 
-️  Security Flags (4):
+⚠️  Security Flags (4):
   -> SPF Check Failed
   -> DKIM Missing/Failed
   -> DMARC Check Failed
@@ -77,7 +77,7 @@ Final Phishing Probability Score: 100/100
 
 ---
 
-## 🛡️ Why This Matters for Enterprise SOC
+## ️ Why This Matters for Enterprise SOC
 1. **Automated Tier 1 Triage**: Reduces manual email analysis time from 15 minutes to 5 seconds per alert.
 2. **Heuristic Typosquatting**: Uses built-in sequence matching to detect domain spoofing without needing external API lookups.
 3. **Air-Gapped Native**: Runs entirely offline. Perfect for restricted government/enterprise SOCs.
@@ -91,7 +91,7 @@ Contributions are welcome! To add a new heuristic check:
 2. Add your logic to the `analyze_headers()` function in `analyzer.py`.
 3. Submit a Pull Request.
 
-## 📄 License
+##  License
 This project is licensed under the MIT License.
 
 ---
