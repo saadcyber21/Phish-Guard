@@ -1,4 +1,4 @@
-# 🛡️ Phish-Guard: Zero-Dependency Email Header & URL Analyzer
+ 🛡️ Phish-Guard: Zero-Dependency Email Header & URL Analyzer
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
